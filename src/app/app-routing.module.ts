@@ -8,8 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inicialpage',
     pathMatch: 'full'
+  },
+  {
+    path: 'inicialpage',
+    loadChildren: () => import('./inicialpage/inicialpage.module').then( m => m.InicialpagePageModule)
+  },
+  {
+    path: 'dados',
+    loadChildren: () => import('./cadastro/dados/dados.module').then( m => m.DadosPageModule)
+  },
+  {
+    path: 'endereco',
+    loadChildren: () => import('./cadastro/endereco/endereco.module').then( m => m.EnderecoPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
 ];
 
