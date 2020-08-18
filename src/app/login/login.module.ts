@@ -20,6 +20,7 @@ import { RouterModule } from '@angular/router';
     LoginPageRoutingModule,
     RouterModule.forChild([
       {path: 'home', loadChildren: './home/home.module'}
+      
     ]),
   ],
   declarations: [LoginPage]

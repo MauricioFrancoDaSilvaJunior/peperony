@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { EnderecoPageRoutingModule } from './endereco-routing.module';
 
 import { EnderecoPage } from './endereco.page';
+import { RouterModule } from '@angular/router';
+
+
 
 @NgModule({
   imports: [
@@ -14,6 +17,7 @@ import { EnderecoPage } from './endereco.page';
     FormsModule,
     IonicModule,
     EnderecoPageRoutingModule
+    
   ],
   declarations: [EnderecoPage]
 })

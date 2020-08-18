@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-dados',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DadosPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public navControl: NavController
+  ) { }
 
   ngOnInit() {
+
+  }
+  Proximo(){
+    return this.navControl.navigateRoot('/endereco')
   }
 
 }
