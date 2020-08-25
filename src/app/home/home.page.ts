@@ -4,8 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
+  
 })
 export class HomePage {
+  public form = [
+    { val: 'Meio a Meio ?', isChecked: true },
+   
+  ];
 
   constructor() {}
 

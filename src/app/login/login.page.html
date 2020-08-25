@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicialpage"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -8,7 +11,7 @@
 
 
 
-<form [formGroup]="loginForm" (ngSubmit)="entrar()">
+  <form [formGroup]="loginForm" (ngSubmit)="entrar()">
   <ion-item>
     <ion-label position="floating">login</ion-label>
   <ion-input formControlName="login" type="text" maxlength=10 ></ion-input>
@@ -25,5 +28,5 @@
   </span>
     <ion-button type='submit' expand="block"color="dark">Entrar</ion-button>
   
-</form>
+  </form>
 </ion-content>

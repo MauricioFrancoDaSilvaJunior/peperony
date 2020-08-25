@@ -9,7 +9,8 @@ import { NavController } from '@ionic/angular';
 export class DadosPage implements OnInit {
 
   constructor(
-    public navControl: NavController
+    public navControl: NavController,
+    //public navback: NavController
   ) { }
 
   ngOnInit() {
@@ -18,5 +19,6 @@ export class DadosPage implements OnInit {
   Proximo(){
     return this.navControl.navigateRoot('/endereco')
   }
+  
 
 }

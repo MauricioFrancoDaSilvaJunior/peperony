@@ -1,20 +1,87 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <center><ion-title>
+      Menu Principal
+    </ion-title></center>
   </ion-toolbar>
 </ion-header>
+<ion-menu>
+  
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  
+</ion-menu>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  
+  <ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-label position="floating" >Selecione a sua Pizza </ion-label>
+      <ion-select placeholder="Selecione a sua Pizza" > 
+        <ion-select-option value="	Calabresa	">	Calabresa	</ion-select-option>
+        <ion-select-option value="	Portuguesa	">	Portuguesa	</ion-select-option>
+        <ion-select-option value="	Marguerita	">	Marguerita	</ion-select-option>
+        <ion-select-option value="	Frango com catupiry	">	Frango com catupiry	</ion-select-option>
+        <ion-select-option value="	Muçarela	">	Muçarela	</ion-select-option>
+        <ion-select-option value="	Napolitana	">	Napolitana	</ion-select-option>
+        <ion-select-option value="	Brigadeiro	">	Brigadeiro	</ion-select-option>
+        <ion-select-option value="	Romeu e Julieta	">	Romeu e Julieta	</ion-select-option>
+        <ion-select-option value="	Creme de avelã com frutas	">	Creme de avelã com frutas	</ion-select-option>
+        <ion-select-option value="	Califórnia	">	Califórnia	</ion-select-option>
+      </ion-select>  
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Selecione a sua bebida </ion-label>
+    <ion-select placeholder="Selecione a sua bebida" >
+      <ion-select-option value="	Coca	">	Coca-cola	</ion-select-option>
+      <ion-select-option value="	DollyL	">	Dolly Laranja	</ion-select-option>
+      <ion-select-option value="	DollyG	">	DollyGuarana	</ion-select-option>
+      <ion-select-option value="	VinhoC	">	Vinho  Seco	</ion-select-option>
+      <ion-select-option value="	VinhoT	">	Vinho Tinto	</ion-select-option>
+      <ion-select-option value="	Cerveja	">	Cerveja Skol	</ion-select-option>
+
+    </ion-select>
+
+  </ion-item>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule">
+        <ion-icon name="pizza"></ion-icon>
+        <ion-label>Salgados</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="Doces">
+        <ion-icon name="pizza-outline"></ion-icon>
+        <ion-label>Doces</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="Bebidas">
+        <ion-icon name="wine"></ion-icon>
+        <ion-label>Bebidas</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="about">
+        <ion-icon name="basket"></ion-icon>
+        <ion-label>Cesta</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+  
+  
+
+  
 </ion-content>

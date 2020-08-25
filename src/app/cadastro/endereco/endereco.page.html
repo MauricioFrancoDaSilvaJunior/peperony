@@ -1,29 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Endereço</ion-title>
+   <ion-title>Endereço</ion-title>
+   <ion-buttons slot="start">
+    <ion-back-button defaultHref="inicialpage"></ion-back-button>
+  </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <form (ngSubmit)= "done()">
+    
+    <ion-item>
+      <ion-label position="floating" >Rua </ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Numero </ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Bairro </ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
 
-    <ion-label >Rua </ion-label>
-    <ion-input placeholder=" "></ion-input>
+    <ion-item>
+      <ion-label>Cidade</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="S">São Paulo</ion-select-option>
+        <ion-select-option value="0">Osasco</ion-select-option>
+      </ion-select>
+    </ion-item>
 
-    <ion-label >Numero </ion-label>
-    <ion-input placeholder=" "></ion-input>
-
-    <ion-label >Bairro </ion-label>
-    <ion-input placeholder=" "></ion-input>
-
-    <ion-label>Cidade</ion-label>
-    <ion-select placeholder="Select One">
-      <ion-select-option value="S">São Paulo</ion-select-option>
-      <ion-select-option value="0">Osasco</ion-select-option>
-    </ion-select>
-
-    <ion-label>UF</ion-label>
-    <ion-select placeholder="Select One"> 
+    <ion-item>
+      <ion-label>UF</ion-label>
+      <ion-select placeholder="Select One"> 
         <ion-select-option value="AC">Acre</ion-select-option>
         <ion-select-option value="AL">Alagoas</ion-select-option>
         <ion-select-option value="AP">Amapá</ion-select-option>
@@ -51,15 +61,19 @@
         <ion-select-option value="SP">São Paulo</ion-select-option>
         <ion-select-option value="SE">Sergipe</ion-select-option>
         <ion-select-option value="TO">Tocantins</ion-select-option>
-	</ion-select>
+      </ion-select>
+    </ion-item>
 
-    <ion-label position="floating"> CEP </ion-label>
-    <ion-input placeholder=""></ion-input>
+    <ion-item>
+      <ion-label position="floating"> CEP </ion-label>
+      <ion-input placeholder=""></ion-input> 
+  </ion-item>  
 
-    <ion-button type='submit' expand="block"color="dark">done</ion-button>
-
+  <ion-item>
+  <ion-button type='submit' expand="block"color="dark">done</ion-button>
+  </ion-item>
 
     
-  </form>
 
+  </form>
 </ion-content>
